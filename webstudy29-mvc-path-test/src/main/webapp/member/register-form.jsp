@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>member register form</title>
+</head>
+<body>
+<%--
+		member/register-form.jsp   --- FrontControllerServlet--HandlerMapping--RegisterMemberController
+													| redirect
+											 member/register-result.jsp 		
+ --%>
+ <form action="${pageContext.request.contextPath}/RegisterMemberController.do" method="post">
+ 	<button type="submit">회원가입</button>
+ </form>
+</body>
+</html>
